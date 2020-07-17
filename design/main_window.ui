@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>815</width>
+    <height>697</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="2" column="1">
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="accessibleDescription">
+       <string/>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+      <property name="text">
+       <string>Получить сводку</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>Предыдущий плагин</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="text">
+       <string>Следующий плагин</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QProgressBar" name="progressBar_local">
+      <property name="value">
+       <number>24</number>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="text">
+       <string>Начать анализ</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="2">
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>Отмена</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Введите текст</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>277</width>
+        <height>5</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="3" column="2">
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>359</width>
+        <height>5</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="4" column="0" colspan="3">
+     <widget class="QTextBrowser" name="textBrowser">
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QProgressBar" name="progressBar_shared">
+      <property name="value">
+       <number>24</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>815</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuhg">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="action"/>
+    <addaction name="action_2"/>
+   </widget>
+   <widget class="QMenu" name="menujb">
+    <property name="title">
+     <string>Справка</string>
+    </property>
+    <addaction name="action_3"/>
+    <addaction name="action_4"/>
+   </widget>
+   <addaction name="menuhg"/>
+   <addaction name="menujb"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action">
+   <property name="text">
+    <string>Установить плагин</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>Удалить плагин</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>О программе</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>Справка</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
